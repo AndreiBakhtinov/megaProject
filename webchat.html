@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,
+        body,
+        .wrapper {
+            height: 100%;
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .inbox {
+            background: grey;
+            width: 150px;
+        }
+        .chat {
+            background: lightgray;
+            width: calc(100% - 300px)
+        }
+        .panel {
+            background: lightblue;
+            width: 50px;
+        }
+        .logo {
+            height: 50px;
+            background: blue;
+        }
+        .menu {
+            height: 150px;
+
+        }
+        .projects {
+            height: 100px;
+            background: rgb(87, 129, 255);
+        }
+        .menu-content {
+            height: 100px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <aside class="sidebar">
+            <div class="logo"></div>
+            <menu class="menu">
+                <div class="menu-content"></div>
+            </menu>
+            <div class="projects"></div>
+        </aside>
+
+
+        <div class="inbox"></div>
+        <div class="chat"></div>
+        <div class="panel"></div>
+    </div>
+    
+</body>
+</html>

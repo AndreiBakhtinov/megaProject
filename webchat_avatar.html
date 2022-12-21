@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .avatar__image {
+            border-radius: 25px;
+        }
+        .avatar {
+            position: relative;
+            width: 120px;
+            aspect-ratio: 1;
+            line-height: 0;
+        }
+        .avatar__indicator {
+            background: green;
+            height: 25px;
+            aspect-ratio: 1;
+            display: inline-block;
+            border-radius: 50%;
+            position: absolute;
+            right: 2px;
+            bottom: 2px;
+            border: 5px solid white;
+        }
+    </style>
+</head>
+<body>
+
+    <figure class="avatar">
+        <img class="avatar__image" src="https://via.placeholder.com/120" alt="">
+        
+        <span class="avatar__indicator"></span>
+    </figure>
+    
+</body>
+</html>

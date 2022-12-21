@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .search__input {
+            border: none;
+            background: none;
+        }
+        .search__input:focus {
+            outline: none;
+        }
+        .search {
+            border: 1px solid grey;
+            width: 80%;
+            background: lightgrey;
+            border-radius: 8px;
+            padding: 5px 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .search__button {
+            border: none;
+            background: none;
+        }
+    </style>
+</head>
+<body>
+
+    <form class="search">
+        <input class="search__input" type="text">
+
+        <button class="search__button">
+            +
+        </button>
+    </form>
+
+
+    <div class="contact">
+        <figure class="contact__avatar">
+            <img class="contact__image" src="" alt="">
+        </figure>
+        <div class="contact__content">
+            <h3 class="contact__name"></h3>
+            <h4 class="contact__title"></h4>
+            <p class="contact__message"></p>
+        </div>
+        <div class="contact__indicator"></div>
+    </div>
+    
+</body>
+</html>

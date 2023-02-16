@@ -41,3 +41,12 @@ create table if not exists reactions(
     FOREIGN KEY (user_id) REFERENCES users(user_id),
     FOREIGN KEY (message_id) REFERENCES messages(message_id)
 );
+
+SELECT chats.chat_id, messages.text, messages.created_at, chats.topic
+FROM chats
+JOIN messages on chats.chat_id=messages.chat_id
+WHERE messages.created_at = (
+    SELECT MAX(created_at) FROM messages m
+    WHERE chats.chat_id=m.chat_id
+)
+ORDER BY messages.created_at DESC;
